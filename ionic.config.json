@@ -1,0 +1,7 @@
+{
+  "name": "Micro-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
