@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Mediciones Alcoholimetro
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-list>
+      <ion-list-header>
+        Historial:
+      </ion-list-header>
+      <ion-item *ngFor="let medicion of mediciones">
+        <ion-label>
+          <strong>Valor Alcohol: </strong> {{medicion.valor}} g/dL
+          <p><strong>Fecha: </strong>{{medicion.fecha | date: "medium"}} </p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+</ion-content>
